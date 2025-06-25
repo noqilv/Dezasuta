@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+ul {
+    display: flex; 
+    list-style: none;
+    gap: 30px;
+}
+
+/*ブレークポイント　768px=タブレットの横幅で切り替え、案件によってはブレークポイントを複数作成して切り替えする*/
+@media screen and (max-width: 768px) {
+ ul{
+    flex-direction: column;
+    gap: 10px;
+ }   
+}
